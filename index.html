@@ -328,6 +328,21 @@
                         </svg></a>
                 </div>
             </div>
+            <div class="footer-subscribe">
+                <strong class="footer-subscribe-strong">Подпишитесь на рассылку</strong>
+                <div class="footer-subscribe-input">
+                    <form class="subscribe-form">
+                        <input type="email" name="email" placeholder="E-mail" class="input-window" />
+                        <button type="submit" class="submit-button">
+                            Подписаться
+                            <svg class="footer-submit-icon">
+                                <use href="./images/icons.svg#send" class="footer-submit-pic" width="24" height="24">
+                                </use>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
         </div>
     </footer>
     <!-- модальное окно -->
@@ -338,6 +353,41 @@
                     <use href="./images/icons.svg#icon-close" class="close-ico"></use>
                 </svg>
             </button>
+            <strong>
+                Оставьте свои данные, мы вам перезвоним
+            </strong>
+            <form>
+                <label for="">Имя
+                    <input type="text" name="name" class="input-window" />
+                    <svg class="footer-submit-icon">
+                        <use href="./images/icons.svg#send" class="footer-submit-pic" width="24" height="24">
+                        </use>
+                    </svg>
+                </label>
+                <label for="">Телефон
+                    <input type="tel" name="phone" class="input-window" />
+                    <svg class="footer-submit-icon">
+                        <use href="./images/icons.svg#send" class="footer-submit-pic" width="24" height="24">
+                        </use>
+                    </svg>
+                </label>
+                <label for="">Почта
+                    <input type="email" name="email" class="input-window" />
+                    <svg class="footer-submit-icon">
+                        <use href="./images/icons.svg#send" class="footer-submit-pic" width="24" height="24">
+                        </use>
+                    </svg>
+                </label>
+                <label for="">Комментарий
+                    <textarea type="text" name="comment" placeholder="Введите текст" class="input-window"></textarea>
+                </label>
+                <label>
+                    <input type="checkbox" name="agreement" value="agreement" />
+                    Соглашаюсь с рассылкой и принимаю
+                    <a>Условия договора</a>
+                </label>
+                <button type="submit" class="submit-button">Отправить</button>
+            </form>
         </div>
     </div>
     <script src="./js/modal.js"></script>
