@@ -647,8 +647,8 @@ ul {
   padding: 15px 16px 15px 16px;
   outline: none;
 
-  font-style: normal;
-  font-weight: normal;
+  font-style: inherit;
+  font-weight: inherit;
   font-size: 16px;
   line-height: calc(20 / 16);
   letter-spacing: 0.03em;
@@ -987,7 +987,7 @@ ul {
   height: 15px;
   border: 2px solid var(--primary-title-color);
   border-radius: 4px;
-  transition-property: background-color;
+  transition-property: border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -995,13 +995,6 @@ ul {
 .agreement-text:checked + .craft-checkbox {
   background-color: var(--accent-color);
   fill: var(--secondary-title-color);
-  border: none;
-}
-
-.agreement-text {
-  transition-property: border-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .agreement-text:hover + .craft-checkbox {
