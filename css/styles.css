@@ -69,8 +69,7 @@ ul {
 }
 
 /* скрытые элементы */
-.visually-hidden,
-.section-title {
+.visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
   width: 1px;
@@ -612,7 +611,7 @@ ul {
 }
 
 .footer-subscribe {
-  margin-left: 93px;
+  margin-left: auto;
   padding-top: 12px;
 }
 
@@ -677,6 +676,10 @@ ul {
   height: 50px;
   border: none;
   margin-left: 12px;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-submit-icon {
   width: 24px;
@@ -1037,6 +1040,8 @@ ul {
 }
 
 .modal-submit-button:hover,
-.modal-submit-button:focus {
+.modal-submit-button:focus,
+.submit-button:hover,
+.submit-button:focus {
   background: var(--button-hover-color);
 }
