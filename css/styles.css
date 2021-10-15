@@ -952,6 +952,12 @@ ul {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.input-window.name,
+.input-window.phone,
+.input-window.mail {
+  height: 40px;
+}
+
 .input-window.name:focus,
 .input-window.phone:focus,
 .input-window.mail:focus,
