@@ -1010,6 +1010,12 @@ ul {
   text-decoration: none;
   text-decoration-line: underline;
   color: var(--accent-color);
+  outline: none;
+}
+
+.agreement-link:focus {
+  border: 1px solid var(--accent-color);
+  border-radius: 4px;
 }
 
 .modal-check-pic {
