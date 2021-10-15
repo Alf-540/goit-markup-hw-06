@@ -45,7 +45,7 @@ ul {
 .link,
 .btn {
   text-decoration: none;
-  transition-property: background-color, color, fill, text-color;
+  transition-property: background-color, color, fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -871,13 +871,13 @@ ul {
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .close-ico {
   fill: var(--logo-color);
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .close-btn:focus .close-ico,
@@ -988,7 +988,7 @@ ul {
 
   width: 16px;
   height: 15px;
-  border: 2px solid var(--primary-title-color);
+  border: 1.8px solid var(--primary-title-color);
   border-radius: 4px;
   transition-property: border-color;
   transition-duration: 250ms;
@@ -998,9 +998,11 @@ ul {
 .agreement-text:checked + .craft-checkbox {
   background-color: var(--accent-color);
   fill: var(--secondary-title-color);
+  border: none;
 }
 
-.agreement-text:hover + .craft-checkbox {
+.agreement-text:hover + .craft-checkbox,
+.agreement-text:focus + .craft-checkbox {
   border-color: var(--accent-color);
 }
 
