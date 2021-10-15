@@ -663,16 +663,15 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-style: none;
   outline-style: none;
   font-weight: bold;
   font-size: 16px;
   line-height: calc(30 / 16);
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
   background-color: var(--accent-color);
   color: var(--header-background-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
   margin: 0;
   padding: 0;
   border-radius: 4px;
