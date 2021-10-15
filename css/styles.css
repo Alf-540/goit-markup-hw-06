@@ -149,10 +149,13 @@ ul {
 
 .header-contacts {
   margin-left: auto;
-  display: flex;
   align-items: center;
 }
+
 .header-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: var(--primary-title-color);
 }
 
@@ -167,6 +170,7 @@ ul {
 
 .contact-icon {
   fill: var(--primary-text-color);
+  margin-right: 10px;
 }
 
 .header-link:hover,
@@ -1014,7 +1018,7 @@ ul {
 }
 
 .agreement-link:focus {
-  border: 1px solid var(--accent-color);
+  outline: 2px solid var(--accent-color);
   border-radius: 4px;
 }
 
